@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #151516;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.company-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #833508;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #54270f;
+}
+.call-btn a {
+    background: #a84f26;
+    color: #000;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* HERO IMAGE */
+.hero {
+    height: 100vh;
+    background-image: url("courtier-img.pdg 3.png"); /* CHANGE IF NEEDED */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.65);
+    padding: 60px 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    margin: 15px 0 30px;
+}
+
+.hero-btn {
+    background: #a1330a;
+    color: #000;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    background: rgba(0,0,0,0.9);
+    padding: 80px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #ac4a1a;
+    margin-bottom: 40px;
+}
+
+/* SERVICES */
+.services-list {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 25px;
+    list-style: none;
+}
+
+.services-list li {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* BOOKING FORM */
+.booking-form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.booking-form textarea {
+    height: 120px;
+}
+
+.booking-form button {
+    background: #8b4618;
+    color: #000;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: #fff;
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
